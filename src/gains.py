@@ -8,7 +8,7 @@ x = np.linspace(0, 45, 300)
 fig, ax = plt.subplots()
 
 # 0.65,0.11,0.1
-controller = PIDController(1,0,0,5)
+controller = PIDController(0.65,0.11,0.1,5)
 controller.setGoal(10)
 
 y = [0, 0]
